@@ -7,9 +7,9 @@
 <style>
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
     text-align: center;
     background: #ffe6f0;
-    margin: 0;
 }
 
 /* FIRST PAGE */
@@ -17,7 +17,6 @@ body {
     padding-top: 120px;
 }
 
-/* buttons */
 button {
     padding: 12px 25px;
     font-size: 18px;
@@ -36,8 +35,8 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
 
     background-image: url('roopa.jpg');
     background-size: cover;
@@ -47,30 +46,25 @@ button {
 
 /* OVERLAY */
 .overlay {
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* side gradient instead of box */
-    background: linear-gradient(
-        to right,
-        rgba(0,0,0,0.55) 0%,
-        rgba(0,0,0,0.35) 30%,
-        rgba(0,0,0,0.35) 70%,
-        rgba(0,0,0,0.55) 100%
-    );
+    background: rgba(0,0,0,0.5);
 }
 
-/* TEXT AREA */
+/* TEXT CONTAINER */
 .textBox {
-    max-width: 900px;
+    max-width: 780px;
     padding: 30px;
+    background: rgba(0,0,0,0.55);
+    border-radius: 15px;
+
     color: #fff5f8;
-    text-shadow: 1px 1px 3px black;
     line-height: 1.8;
     font-size: clamp(18px,2.2vw,24px);
+    text-shadow: 1px 1px 4px black;
 }
 </style>
 </head>
@@ -89,9 +83,8 @@ button {
 <!-- SECOND SCREEN -->
 <div id="secondPage">
   <div class="overlay">
-
     <div class="textBox">
-      <h1 style="color:#ffc0cb; font-size:34px;">Dr. Roopa Ghode ❤️</h1>
+      <h1 style="color:#ffc0cb; font-size:36px;">Dr. Roopa Ghode ❤️</h1>
 
 You make my days brighter, my smile wider, and my heart happier. Every moment with you feels special. I’m truly lucky to have you in my life. 💖
 <br><br>
@@ -106,15 +99,14 @@ So today, with honesty and respect… Will you be my Valentine once again? 💐
 </strong>
 
     </div>
-
   </div>
 </div>
 
 <script>
 function moveNo() {
     const btn = document.getElementById("noBtn");
-    btn.style.left = Math.random() * (window.innerWidth - 120) + "px";
-    btn.style.top  = Math.random() * (window.innerHeight - 120) + "px";
+    btn.style.left = Math.random() * (window.innerWidth - 110) + "px";
+    btn.style.top  = Math.random() * (window.innerHeight - 110) + "px";
 }
 
 function showSecond() {

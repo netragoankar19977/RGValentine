@@ -39,26 +39,26 @@ button {
     height: 100vh;
 
     background-image: url('roopa.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover;     
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
-/* OVERLAY */
 .overlay {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0,0,0,0.5);
+
+    background: rgba(0,0,0,0.4);
 }
 
-/* TEXT CONTAINER */
+/* TEXT BOX */
 .textBox {
-    max-width: 780px;
+    max-width: 850px;
     padding: 30px;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.45);
     border-radius: 15px;
 
     color: #fff5f8;
@@ -71,7 +71,6 @@ button {
 
 <body>
 
-<!-- FIRST SCREEN -->
 <div id="firstPage">
     <h1>Dr. Roopa Ghode 💕</h1>
     <h2>Will You Be My Valentine?</h2>
@@ -80,7 +79,6 @@ button {
     <button id="noBtn" onmouseover="moveNo()">NO</button>
 </div>
 
-<!-- SECOND SCREEN -->
 <div id="secondPage">
   <div class="overlay">
     <div class="textBox">
